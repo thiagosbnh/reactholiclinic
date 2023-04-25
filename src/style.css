@@ -1,0 +1,310 @@
+/* Global Style */
+
+body{
+	font-family: 'Josefin Sans';
+	background-color: #efefff;
+}
+
+h1{
+	font-size: 28px;
+	font-weight:400;
+	text-transform: uppercase;
+	color:#2C2759;
+}
+
+h2{
+	font-size: 24px;
+	font-weight:400;
+	text-transform: uppercase;
+	color:#2C2759;
+}
+
+h3{
+	font-size: 20px;
+	font-weight:300;
+	text-transform: uppercase;
+	color:#2C2759;
+}
+
+h4{
+	font-size: 18px;
+	font-weight:500;
+	text-transform: uppercase;
+	color:#2C2759;
+}
+
+h5{
+	font-size: 14px;
+	font-weight:600;
+	text-transform: uppercase;
+	color:#2C2759;
+	letter-spacing:3px;
+}
+
+h6{
+	font-size: 12px;
+	font-weight:400;
+	text-transform: uppercase;
+	color:#928EBF;
+	letter-spacing:1px;
+}
+
+p{
+	font-weight:300;
+	font-size:20px;
+	color:#2C2759;
+}
+
+/* Style for the Navigation Bar - START */
+.navbar{
+	background-color: #ffffff;
+	font-size: 20px;
+	padding: 15px 0px 15px 0px;
+}
+
+.nav-link{
+	color:#605AA1;
+	font-weight:300;
+	
+}
+
+.nav-link:hover{
+	font-weight:400;
+}
+
+ul li{
+	color:#2C2759;
+	list-style-type:none;
+}
+
+a{
+	color: #2C2759
+}
+a:hover{
+	color: #8AAA79
+}
+/* Style for the Navigation Bar - END */
+
+/* Spacer <div> */
+.spacer{
+	height:50px;
+}
+
+/* Footer background-colour */
+.footer{
+	background-color: white;
+}
+
+/* Google Maps - make the map responsive */
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* Index */
+
+.header-img{
+	padding:0;
+	margin:0;
+	width:100%;
+	height:480px;
+	background-image: url("../public/images/header.jpg");
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+	position:relative;
+}
+
+.header-title{
+	padding:0;
+	margin:0;
+	width:100%;
+	position:absolute; 	/*so it can stay over the parent div*/
+	font-size:38px;
+	letter-spacing:2px;
+	text-transform: uppercase;
+	color: white;
+	text-align:center;
+	font-weight:200;
+	/*next 3 lines are to center it in the parent div*/
+	top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);	
+}
+
+/* Buttons */
+.cta{
+	font-size:18px;
+	letter-spacing:2px;
+	text-transform: uppercase;
+	font-weight:600;
+	color:#2C2759;
+	height: 180px;
+	width:100%;
+	margin: 10px 0px;
+	border:none;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+}
+
+.cta:hover{
+	color:#8AAA79;
+}
+
+.booking{
+	background-image: url("../public/images/bookingbutton.jpg");
+}
+
+.aboutclinic{
+	background-image: url("../public/images/aboutbutton.jpg");
+}
+
+/* About Us */
+
+p{
+	margin-top:20px;
+}
+
+
+/* The button that opens and closes the collapsed section*/
+.collapsible {
+	color: white;
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size:22px;
+	letter-spacing:3px;
+	text-transform: uppercase;
+	font-weight:300;
+	color:#2C2759;
+	height: 130px;
+	margin: 10px;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+	
+}
+
+/* The button appearance when it's hovered by the cursor, and when it has been clicked*/
+.active, .collapsible:hover {
+	font-weight:500;
+}
+
+.content {
+	padding: 0 20px 20px 20px;
+	max-height: 0;
+	overflow: hidden; /* the overflow property is visible by default, by leaving it hidden it will clip any content that is too big for it's area*/
+	transition: max-height 0.2s ease-out; /* a transition to smooth the opening */
+	background-color: #f1f1f1;
+	display: none;
+}
+
+.collapsible:after {
+	content: '+';
+	font-size: 36px;
+	line-height: 30px;
+	font-weight:400;
+	color: white;
+	float: right;
+}
+
+.active:after {
+	content: "-";
+	font-size: 36px;
+	line-height: 30px;
+	font-weight:400;
+	color: white;
+	float: right;
+	margin-left: 5px;
+}
+
+.acupunture{
+	background-image: url("../public/images/coll-acupunture.jpg");
+}
+
+.massage{
+	background-image: url("../public/images/coll-massage.jpg");
+}
+
+.energy{
+	background-image: url("../public/images/coll-energy.jpg");
+}
+
+
+/* Make a Booking */
+
+.booking-header{
+	padding:0;
+	margin:0;
+	width:100%;
+	height:250px;
+	background-image: url("../public/images/booking-header.jpg");
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+	position:relative;
+}
+
+.booking-text{
+	padding:0;
+	margin:0;
+	width:100%;
+	font-size:38px;
+	letter-spacing:2px;
+	text-transform: uppercase;
+	color: white;
+	font-weight:200;
+	
+	position:absolute;
+	text-align:center;
+	top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);	
+}
+
+/* Contact Us */
+
+label{
+	margin-top:20px;
+	font-size: 14px;
+	font-weight:600;
+	text-transform: uppercase;
+	color:#2C2759;
+	letter-spacing:3px;
+}
+
+input, textarea {
+	width: 100%;
+	font-weight:300;
+	font-size:20px;
+	padding:5px 5px 5px 10px;
+	border:none;
+	margin: 10px 0;
+	border-radius: 5px;
+}
+
+.button-send{
+	margin-top:20px;
+	padding: 15px 10px 10px 10px;
+	border:none;
+	background-color: #605AA1;
+	color:white;
+	font-weight:600;
+	text-transform: uppercase;
+	letter-spacing:3px;
+}
