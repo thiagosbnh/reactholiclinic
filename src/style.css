@@ -182,7 +182,7 @@ p{
 .collapsible {
 	color: white;
 	cursor: pointer;
-	padding: 20px;
+	padding: 50px 0 0 0;
 	width: 100%;
 	border: none;
 	text-align: center;
@@ -207,33 +207,12 @@ p{
 
 .content {
 	padding: 0 20px 20px 20px;
-	max-height: 0;
-	overflow: hidden; /* the overflow property is visible by default, by leaving it hidden it will clip any content that is too big for it's area*/
-	transition: max-height 0.2s ease-out; /* a transition to smooth the opening */
 	background-color: #f1f1f1;
-	display: none;
+	display:inline;
+
 }
 
-.collapsible:after {
-	content: '+';
-	font-size: 36px;
-	line-height: 30px;
-	font-weight:400;
-	color: white;
-	float: right;
-}
-
-.active:after {
-	content: "-";
-	font-size: 36px;
-	line-height: 30px;
-	font-weight:400;
-	color: white;
-	float: right;
-	margin-left: 5px;
-}
-
-.acupunture{
+#acupunture{
 	background-image: url("../public/images/coll-acupunture.jpg");
 }
 

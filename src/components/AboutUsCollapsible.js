@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Collapsible from 'react-collapsible';
 
 class AboutUsCollapsible extends Component {
   render() {
@@ -11,12 +12,49 @@ class AboutUsCollapsible extends Component {
                 <h2>Our Services</h2>
               </center>
               <div className="pt-4">
-                <button
+                <Collapsible trigger="Acupuncture" >
+                  <p>
+                    Acupuncture is a form of alternative medicine and a component of
+                    traditional Chinese medicine (TCM) in which thin needles are
+                    inserted into the body. There is a range of acupuncture variants
+                    which originated in different philosophies, and techniques vary
+                    depending on the country in which it is performed, but can be
+                    divided into two main foundational philosophical applications and
+                    approaches, the first being the modern standardized form called
+                    eight principles TCM and the second an older system that is based
+                    on the ancient Daoist wuxing, better known as the five elements or
+                    phases in the West.
+                  </p>
+                </Collapsible>
+                <Collapsible trigger="Massage">
+                  <p>
+                    Massage is the manipulation of the body's soft tissues. Massage
+                    techniques are commonly applied with hands, fingers, elbows,
+                    knees, forearms, feet or a device. The purpose of massage is
+                    generally for the treatment of body stress or pain. In European
+                    countries, a person professionally trained to give massages is
+                    traditionally known as a masseur (male) or masseuse (female).
+                  </p>
+                </Collapsible>
+                <Collapsible trigger="Energy">
+                  <p>
+                    Many people often assume that energy healing and massage therapy
+                    are one and the same. However, there is a difference between the
+                    two. Energy healing believes that the human energy field extends
+                    beyond the body and skin. Energy healing also believes that when
+                    the flow of this energy is obstructed or imbalanced, it results in
+                    ailments and health problems. So the main aim of energy healing is
+                    to restore the balance of the energy field and facilitate healing
+                    of the body and mind. It is seen as a natural process of restoring
+                    the body, spirit and mind to complete health.
+                  </p>
+                </Collapsible>
+                {/* <button
                   className="collapsible acupunture"
                   alt="Background image of Acupuncture therapy"
                 >
                   Acupuncture
-                </button>{" "}
+                </button>{" "} */}
                 {/* class collapsible is going to trigger a JavaScript Event Listener to uncollapse the content */}
                 {/* <div className="content">
                   <p>
@@ -32,12 +70,12 @@ class AboutUsCollapsible extends Component {
                     phases in the West.
                   </p>
                 </div> */}
-                <button
+                {/* <button
                   className="collapsible massage"
                   alt="Background image of Massage therapy"
                 >
                   Massage
-                </button>
+                </button> */}
                 {/* <div className="content">
                   <p>
                     Massage is the manipulation of the body's soft tissues. Massage
@@ -48,12 +86,12 @@ class AboutUsCollapsible extends Component {
                     traditionally known as a masseur (male) or masseuse (female).
                   </p>
                 </div> */}
-                <button
+                {/* <button
                   className="collapsible energy"
                   alt="Background image of Energy Healing therapy"
                 >
                   Energy Healing
-                </button>
+                </button> */}
                 {/* <div className="content">
                   <p>
                     Many people often assume that energy healing and massage therapy

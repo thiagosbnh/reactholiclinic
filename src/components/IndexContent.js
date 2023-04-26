@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { Link , Route , Routes } from 'react-router-dom';
+import Booking from '../views/Booking';
 
 class IndexContent extends Component {
+	
   render() {
     return (
 		<div className="container ">
@@ -24,26 +27,30 @@ class IndexContent extends Component {
 				<div className="col-xs-12 col-lg-1" />
 				<div className="col-xs-12 col-lg-4">
 				<div className="row">
-					<form action="booking.html" style={{ width: "100%" }}>
-					<button
-						className="cta booking"
-						type="submit"
-						alt="Background image of two fingers holding a needle"
-					>
-						Make a Booking
-					</button>
+					<form style={{ width: "100%" }}>
+						<Link to="/booking">
+							<button
+								className="cta booking"
+								alt="Background image of two fingers holding a needle"
+							>
+								Make a Booking
+							</button>
+						</Link>
+						
 					</form>
 				</div>
 				<div className="row w-100" />
 				<div className="row">
-					<form action="aboutus.html" style={{ width: "100%" }}>
-					<button
-						className="cta aboutclinic"
-						type="submit"
-						alt="Background image of a person receiving a massage"
-					>
-						About our Clinic
-					</button>
+					<form style={{ width: "100%" }}>
+						<Link to="/about">
+							<button
+								className="cta aboutclinic"
+								type="submit"
+								alt="Background image of a person receiving a massage"
+							>
+								About our Clinic
+							</button>
+						</Link>
 					</form>
 				</div>
 				</div>

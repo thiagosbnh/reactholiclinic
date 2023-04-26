@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import '../style.css';
 
 class Navbar extends Component {
   render() {
@@ -8,13 +10,13 @@ class Navbar extends Component {
 		<div className="container">
 		  {" "}
 		  {/* container will keep all elements inside the 12-grid system */}
-		  <a className="navbar-brand" href="index.html">
+		  <Link className="navbar-brand" to="/">
 			<img
 			  src="images/logo-holiclinic.svg"
 			  style={{ height: 35 }}
-			  alt="HoliClinic Logo resembling a Lotus Flower"
+			  alt="HoliClinic Logo"
 			/>
-		  </a>
+		  </Link>
 		  <button
 			className="navbar-toggler"
 			type="button"
@@ -31,24 +33,24 @@ class Navbar extends Component {
 			  {" "}
 			  {/* ms-auto brings the menu to the right-side, mt-3 is extra margin at the top */}
 			  <li className="nav-item">
-				<a className="nav-link" href="index.html">
+				<Link className="nav-link" to="/">
 				  Home
-				</a>
+				</Link>
 			  </li>
 			  <li className="nav-item">
-				<a className="nav-link" href="aboutus.html">
+				<Link className="nav-link" to="/about">
 				  About Us
-				</a>
+				</Link>
 			  </li>
 			  <li className="nav-item">
-				<a className="nav-link" href="booking.html">
+				<Link className="nav-link" to="/booking">
 				  Make a Booking
-				</a>
+				</Link>
 			  </li>
 			  <li className="nav-item">
-				<a className="nav-link" href="contactus.html">
+				<Link className="nav-link" to="/contact">
 				  Contact Us
-				</a>
+				</Link>
 			  </li>
 			</ul>
 		  </div>
