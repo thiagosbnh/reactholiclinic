@@ -2,12 +2,12 @@ import React from 'react';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import ContactUsContent from '../components/ContactUsContent';
+import ContactForm from '../components/ContactForm';
 
 function AboutUs() {
   return (
     <>
-    <ContactUsContent />
+    <ContactForm />
     </>
   );
 }

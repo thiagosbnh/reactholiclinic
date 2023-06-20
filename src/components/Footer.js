@@ -16,7 +16,7 @@ class Footer extends Component {
 				{/* display:flex; justify center to have it centered, pb-4 is padding-bottom:4 so the footer has some blank space at the bottom */}
 				<div className="col-xs-12 col-md-8">
 					<h5>
-					<a href="contactus.html">Contact Us</a>
+					<Link to="/contact">Contact Us</Link>
 					</h5>
 					<p>
 					123 Clinic Road, Dublin 01, D01W3E4

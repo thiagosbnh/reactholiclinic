@@ -181,8 +181,7 @@ p{
 /* The button that opens and closes the collapsed section*/
 .collapsible {
 	color: white;
-	cursor: pointer;
-	padding: 50px 0 0 0;
+	padding: 20px;
 	width: 100%;
 	border: none;
 	text-align: center;
@@ -192,27 +191,27 @@ p{
 	text-transform: uppercase;
 	font-weight:300;
 	color:#2C2759;
-	height: 130px;
+	height: 140px;
 	margin: 10px;
 	background-size: cover;
 	background-position-x: center;
-	background-position-y: center;
-	
+	background-position-y: center;	
 }
 
 /* The button appearance when it's hovered by the cursor, and when it has been clicked*/
-.active, .collapsible:hover {
+/* .active, .collapsible:hover {
 	font-weight:500;
-}
+} */
 
 .content {
 	padding: 0 20px 20px 20px;
 	background-color: #f1f1f1;
-	display:inline;
+	display:none;
+
 
 }
 
-#acupunture{
+.acupunture{
 	background-image: url("../public/images/coll-acupunture.jpg");
 }
 
